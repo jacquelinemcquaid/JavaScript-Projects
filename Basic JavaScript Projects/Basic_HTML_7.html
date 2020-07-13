@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+    <meta charset="utf-8">
+    </head>
+<body>
+
+<script src="C:\Users\jacqu\OneDrive\Desktop\Basic JavaScript Projects\Basic_JavaScript_7.js"></script>
+
+
+<p>Compare 5 and 4.</p>
+<script>
+    if (5>4) {
+        document.write("The left number is larger than the right number.")
+    }
+</script>
+
+<script>
+    function Add_numbers_5() {
+        var X = 10
+        console.log(15 + X);
+    }
+    function Add_numbers_6() {
+        console.log(X + 100);
+    }
+    Add_numbers_5();
+    Add_numbers_6();
+</script>
+
+<p id="Time_of_day"></p>
+<button onclick="Time_function()">Click here to get the time</button>
+
+<script>
+    function Time_function() {
+        var Time = new Date().getHours();
+        var Reply;
+        if (Time < 12 == Time > 0) {
+            Reply = "It is morning time!.";
+        }
+        else if (Time > 12 == Time < 18) {
+            Reply = "It is the afternoon.";
+        }
+        else {
+            Reply = "It is evening time.";
+        }
+        document.getElementById("Time_of_day").innerHTML = Reply;
+    }
+</script>
+</body>
+</html>
