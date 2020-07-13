@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+    <meta charset="utf-8">
+    </head>
+<body>
+
+<script src="C:\Users\jacqu\OneDrive\Desktop\Basic JavaScript Projects\Basic_JavaScript_6.js"></script>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="vote"></p>
+
+<h1>Constructors</h1>
+
+<p id="constructor"></p>
+
+
+<p id="demo"></p>
+
+<script>
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Create a Person object
+var myBrother = new Person("Jack", "White", 20, "blue");
+
+// Display age
+document.getElementById("demo").innerHTML =
+"My brother is " + myBrother.age + ". " + "My brother's name is " + myBrother.firstName + "."; 
+</script>
+
+<p id="Counting" onclick="count_Function()">Click here.</p>
+
+<script>function count_Function() {
+    document.getElementById("Counting").innerHTML = Count();
+    function Count() {
+        var Starting_point = 9;
+        function Plus_one() {Starting_point +- 1;}
+        Plus_one();
+        return Starting_point;
+    }
+}
+</script>
+
+</body>
+</html>
